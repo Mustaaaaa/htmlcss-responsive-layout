@@ -6,6 +6,7 @@
 }
 ul, ol{
     list-style: none;
+    font-size: 15px;
 }
 img{
     width: 100%;
@@ -18,29 +19,18 @@ a{
 .b-container{
     width: 1200px;
     padding: 0 20px;
+    margin: 25px 0;
 }
 .s-container{
     width: 940;
     padding: 0 20px;
+    margin: 25px 0;
 }
-
-/* buttons */
-.button{
-    line-height: 35px;
-    border-radius: 50px;
-    width: 120px;
-    display: flex;
-    justify-content: center;
-}
-.button{
-    background-color: white;
-    color: black;
-}
-
 /* style */
 .row{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 .flex{
     display: flex;
@@ -54,33 +44,60 @@ a{
 .align-items-center{
     align-items: center;
 }
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
 .main-header{
     height: 75px;
-    background-color: #0084FD;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.main-header .nav-bar ul{
-    color: white;
-    gap: 30px;
-    font-size: 15px;
 }
 .main-body{
     display: flex;
     justify-content: center;
 }
+.application-section li{
+    margin: 20px 25px;
+    line-height: 35px;
+}
+.application-section .col-66, .col-33{
+    padding: 25px 0;
+    border-radius: 20px;
+    
+}
+.application-section .col-33 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.application-section .icon{
+    font-size: 75px;
+}
+.application-section img{
+    width: 200px;
+    padding: 0;
+    margin: 0;
+}
+.phone-image{
+    display: flex;
+    justify-content: end;
+}
+
+
 
 
 /* column */
 .col-33{
-    width: calc(4 *100% / 12);
+    width: calc(4 *100% / 12 - 25px);
 }
 .col-50{
-    width: calc(6 *100% / 12);
+    width: calc(6 *100% / 12 - 25px);
 }
 .col-66{
-    width: calc(8* 100% / 12);
+    width: calc(8* 100% / 12 - 25px);
 }
 .col-100{
     width: calc(100%);
@@ -88,4 +105,28 @@ a{
 /* background color */
 .bg-lightblue{
     background-color: #0084FD;
+}
+.bg-cyan{
+    background-color: #B5DDFF;
+}
+.bg-white{
+    background-color: white;
+}
+/* font color */
+.lightblue{
+    color: #0084FD;
+}
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
+/* buttons */
+.button{
+    line-height: 35px;
+    border-radius: 50px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
 }
