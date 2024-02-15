@@ -15,6 +15,9 @@ a{
     text-decoration: none;
     color: currentColor;
 }
+img{
+    width: 100%;
+}
 /* layout */
 .b-container{
     width: 1200px;
@@ -22,7 +25,7 @@ a{
     margin: 25px 0;
 }
 .s-container{
-    width: 940;
+    width: 940px;
     padding: 0 20px;
     margin: 25px 0;
 }
@@ -56,35 +59,53 @@ a{
 }
 .main-body{
     display: flex;
-    justify-content: center;
-}
-.application-section li{
-    margin: 20px 25px;
-    line-height: 35px;
-}
-.application-section .col-66, .col-33{
-    padding: 25px 0;
-    border-radius: 20px;
-    
-}
-.application-section .col-33 ul{
-    display: flex;
     flex-direction: column;
     align-items: center;
+}
+.application-section img{
+    width: 200px;
+}
+.application-section .col-33{
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    padding: 20px;
+    
+}
+.application-section .col-66 .col-50.phone-image{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 326px;
+}
+.application-section .col-66, .col-50.left-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.application-section .col-66 .col-50.left-column{
+    padding: 20px;
 }
 .application-section .icon{
     font-size: 75px;
 }
-.application-section img{
-    width: 200px;
-    padding: 0;
-    margin: 0;
+.application-section li{
+    line-height: 30px;
+    padding: 10px;
 }
-.phone-image{
+.app-development-section{
+    width: 100%;
+    background-color: #9792E4;
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+.app-development-section .s-container{
+    padding: 25px;
+}
+
+
 
 
 
@@ -92,15 +113,19 @@ a{
 /* column */
 .col-33{
     width: calc(4 *100% / 12 - 25px);
+    border-radius: 15px;
 }
 .col-50{
     width: calc(6 *100% / 12 - 25px);
+    border-radius: 15px;
 }
 .col-66{
     width: calc(8* 100% / 12 - 25px);
+    border-radius: 15px;
 }
 .col-100{
     width: calc(100%);
+    border-radius: 15px;
 }
 /* background color */
 .bg-lightblue{
