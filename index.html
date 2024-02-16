@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Layout</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/7a5b1f1af0.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
@@ -15,15 +15,18 @@
     <header class="main-header bg-lightblue">
         <div class="b-container">
             <nav class="row">
-                <div class=" flex justify-spacebetween nav-bar white">
-                    <a class="logo" href=""><img src="./img/logo.png" alt=""></a>
-                    <ul class="row align-items-center">
-                        <li><a href="">Planning</a></li>
-                        <li><a href="">Testimonials</a></li>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li class="button bg-white black"><a href="">Get Started</a></li>
-                    </ul>
+                <div class="col-100">
+                    <div class=" flex justify-spacebetween nav-bar white">
+                        <a class="logo" href=""><img src="./img/logo.png" alt=""></a>
+                        <ul class="row align-items-center menu">
+                            <li><a href="">Planning</a></li>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Features</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li class="button bg-white black"><a href="">Get Started</a></li>
+                        </ul>
+                        <h1 class="hamburger"><i class="fa-solid fa-bars"></i></h1>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -34,9 +37,9 @@
     <main class="main-body">
         <section class="b-container application-section">
             <div class="row">
-                <div class="col-66 bg-cyan">
-                    <div class="row">
-                        <div class="col-50 left-column">
+                <div class="col-66 bg-cyan col-sm-12">
+                    <div class="row ">
+                        <div class="col-50 left-column col-md-12">
                             <ul>
                                 <li class="names lightblue">Get a demo application</li>
                                 <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione nobis, architecto
@@ -47,12 +50,12 @@
                                 <a href=""><i class="fa-brands fa-apple"></i> App Store</a>
                             </div>
                         </div>
-                        <div class="phone-image col-50">
+                        <div class="phone-image col-50 col-md-12">
                             <img src="./img/phone.png" alt=""></li>
                         </div>
                     </div>
                 </div>
-                <div class="col-33 bg-cyan">
+                <div class="col-33 bg-cyan col-sm-12">
                     <ul>
                         <li><i class="fa-solid fa-file-code lightblue icon"></i></li>
                         <li class="names lightblue">Clean Code</li>
@@ -60,7 +63,7 @@
                             dolore quod, facere totam quas recusandae blanditiis.</li>
                     </ul>
                 </div>
-                <div class="col-33 bg-cyan">
+                <div class="col-33 bg-cyan col-sm-12">
                     <ul>
                         <li><i class="fa-solid fa-compass-drafting lightblue icon"></i></li>
                         <li class="names lightblue">Web Design</li>
@@ -68,7 +71,7 @@
                             dolore quod, facere totam quas recusandae blanditiis.</li>
                     </ul>
                 </div>
-                <div class="col-33 bg-cyan">
+                <div class="col-33 bg-cyan col-sm-12">
                     <ul>
                         <li><i class="fa-solid fa-laptop-code lightblue icon"></i></i></li>
                         <li class="names lightblue">Development</li>
@@ -76,7 +79,7 @@
                             dolore quod, facere totam quas recusandae blanditiis.</li>
                     </ul>
                 </div>
-                <div class="col-33 bg-cyan">
+                <div class="col-33 bg-cyan col-sm-12">
                     <ul>
                         <li><i class="fa-solid fa-bullhorn lightblue icon"></i></li>
                         <li class="names lightblue">Branding</li>
@@ -92,7 +95,7 @@
         <section class="dev-and-plan-section bg-violet">
             <div class="m-container">
                 <div class="row">
-                    <div class="col-50 white">
+                    <div class="col-50 white col-md-12">
                         <img src="./img/planning1.png" alt="">
                         <ul>
                             <li class="names">Strategic Planning</li>
@@ -102,7 +105,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-50 ">
+                    <div class="col-50 col-md-12">
                         <div class="bg-white card">
                             <img src="./img/planning2.png" alt="">
                             <ul>
@@ -123,58 +126,62 @@
         <!-- testimonials section-->
         <section class="testimonials-section">
             <div class="b-container">
-                <div>
-                    <ul class="flex column text-align-center">
-                        <li>TESTIMONIALS</li>
-                        <li class="title violet">We are committed expert partners</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores soluta eos impedit,
-                            doloribus
-                            repudiandae natus illum omnis quidem sequi atque quisquam similique sint quo voluptatem
-                            voluptatum optio at eligendi. Maxime.</li>
-                    </ul>
+                <div class="row">
+                    <div>
+                        <ul class="flex column text-align-center">
+                            <li>TESTIMONIALS</li>
+                            <li class="title violet">We are committed expert partners</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores soluta eos impedit,
+                                doloribus
+                                repudiandae natus illum omnis quidem sequi atque quisquam similique sint quo voluptatem
+                                voluptatum optio at eligendi. Maxime.</li>
+                        </ul>
+                    </div>
+                    <div class="testimonial-card col-100 flex bg-violet">
+                        <img class="testimonial-img" src="./img/testimonial1.jpg" alt="">
+                        <ul class="flex column justify-center white">
+                            <li><strong><i class="fa-solid fa-quote-left"></i></strong> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Dolores soluta eos impedit, doloribus
+                                repudiandae natus illum omnis quidem sequi atque quisquam similique sint quo voluptatem
+                                voluptatum optio at eligendi. Maxime. <strong><i
+                                        class="fa-solid fa-quote-right"></i></strong></li>
+                            <li class="names">NAT REYNOLDS</li>
+                        </ul>
+                    </div>
+                    <div class="testimonial-card col-100 flex bg-violet">
+                        <img class="testimonial-img" src="./img/testimonial2.jpg" alt="">
+                        <ul class="flex column justify-center white">
+                            <li>
+    
+                            </li>
+                            <li><strong><i class="fa-solid fa-quote-left"></i></strong> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Dolores soluta eos impedit, doloribus
+                                repudiandae natus illum omnis quidem sequi atque quisquam similique sint quo voluptatem
+                                voluptatum optio at eligendi. Maxime. <strong><i
+                                        class="fa-solid fa-quote-right"></i></strong></li>
+                            <li class="names">CELIA ALMEDA</li>
+                        </ul>
+                    </div>
+                    <div class="testimonial-card col-100 flex bg-violet">
+                        <img class="testimonial-img" src="./img/testimonial3.jpg" alt="">
+                        <ul class="flex column justify-center white">
+                            <li>
+    
+                            </li>
+                            <li><strong><i class="fa-solid fa-quote-left"></i></strong> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Dolores soluta eos impedit, doloribus
+                                repudiandae natus illum omnis quidem sequi atque quisquam similique sint quo voluptatem
+                                voluptatum optio at eligendi. Maxime. <strong><i
+                                        class="fa-solid fa-quote-right"></i></strong></li>
+                            <li class="names">BOB ROBERTS</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="testimonial-card col-100 flex bg-violet">
-                    <img class="testimonial-img" src="./img/testimonial1.jpg" alt="">
-                    <ul class="flex column justify-center white">
-                        <li><strong><i class="fa-solid fa-quote-left"></i></strong> Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Dolores soluta eos impedit, doloribus
-                            repudiandae natus illum omnis quidem sequi atque quisquam similique sint quo voluptatem
-                            voluptatum optio at eligendi. Maxime. <strong><i
-                                    class="fa-solid fa-quote-right"></i></strong></li>
-                        <li class="names">NAT REYNOLDS</li>
-                    </ul>
-                </div>
-                <div class="testimonial-card col-100 flex bg-violet">
-                    <img class="testimonial-img" src="./img/testimonial2.jpg" alt="">
-                    <ul class="flex column justify-center white">
-                        <li>
-
-                        </li>
-                        <li><strong><i class="fa-solid fa-quote-left"></i></strong> Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Dolores soluta eos impedit, doloribus
-                            repudiandae natus illum omnis quidem sequi atque quisquam similique sint quo voluptatem
-                            voluptatum optio at eligendi. Maxime. <strong><i
-                                    class="fa-solid fa-quote-right"></i></strong></li>
-                        <li class="names">CELIA ALMEDA</li>
-                    </ul>
-                </div>
-                <div class="testimonial-card col-100 flex bg-violet">
-                    <img class="testimonial-img" src="./img/testimonial3.jpg" alt="">
-                    <ul class="flex column justify-center white">
-                        <li>
-
-                        </li>
-                        <li><strong><i class="fa-solid fa-quote-left"></i></strong> Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Dolores soluta eos impedit, doloribus
-                            repudiandae natus illum omnis quidem sequi atque quisquam similique sint quo voluptatem
-                            voluptatum optio at eligendi. Maxime. <strong><i
-                                    class="fa-solid fa-quote-right"></i></strong></li>
-                        <li class="names">BOB ROBERTS</li>
-                    </ul>
-                </div>
+               
             </div>
         </section>
         <!-- testimonials section end-->
+
         <!--working with us section-->
         <section class="working-with-us-section bg-violet">
             <div class="b-container text-align-center">
@@ -184,7 +191,7 @@
             </div>
             <div class="b-container">
                 <div class="row">
-                    <div class="col-33">
+                    <div class="col-33 col-md-6 col-sm-12">
                         <div class=" card bg-white">
                             <ul>
                                 <li class="title violet">01</li>
@@ -197,7 +204,7 @@
                             <a class="button bg-violet white">more</a>
                         </div>
                     </div>
-                    <div class="col-33">
+                    <div class="col-33 col-md-6 col-sm-12">
                         <div class=" card bg-white">
                             <ul>
                                 <li class="title violet">02</li>
@@ -210,7 +217,7 @@
                             <a class="button bg-violet white">more</a>
                         </div>
                     </div>
-                    <div class="col-33">
+                    <div class="col-33 col-md-6 col-sm-12">
                         <div class=" card bg-white">
                             <ul>
                                 <li class="title violet">03</li>
@@ -223,7 +230,7 @@
                             <a class="button bg-violet white">more</a>
                         </div>
                     </div>
-                    <div class="col-33">
+                    <div class="col-33 col-md-6 col-sm-12">
                         <div class=" card bg-white">
                             <ul>
                                 <li class="title violet">04</li>
@@ -236,7 +243,7 @@
                             <a class="button bg-violet white">more</a>
                         </div>
                     </div>
-                    <div class="col-33">
+                    <div class="col-33 col-md-6 col-sm-12">
                         <div class=" card bg-white">
                             <ul>
                                 <li class="title violet">05</li>
@@ -249,7 +256,7 @@
                             <a class="button bg-violet white">more</a>
                         </div>
                     </div>
-                    <div class="col-33">
+                    <div class="col-33 col-md-6 col-sm-12">
                         <div class=" card bg-white">
                             <ul>
                                 <li class="title violet">06</li>
@@ -271,7 +278,7 @@
         <section class="about-us-section">
             <div class="b-container">
                 <div class="row">
-                    <div class="col-66">
+                    <div class="col-66 col-sm-12">
                         <ul>
                             <li class="title violet">About Us</li>
                             <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quas perferendis suscipit
@@ -289,7 +296,7 @@
                                 quia consequuntur odio ipsam labore illum sit ea quae commodi.</li>
                         </ul>
                     </div>
-                    <div class="col-33 ">
+                    <div class="col-33 col-sm-12">
                         <div class="bg-white card">
                             <div class="about-us-image violet"><i class="fa-solid fa-quote-left"></i></div>
                             <ul>
