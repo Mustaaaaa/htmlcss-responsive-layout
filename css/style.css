@@ -18,16 +18,19 @@ a{
 img{
     width: 100%;
 }
+li{
+    line-height: 30px;
+}
 /* layout */
 .b-container{
     width: 1200px;
     padding: 0 20px;
-    margin: 25px 0;
+    margin: 40px auto;
 }
 .s-container{
     width: 940px;
     padding: 0 20px;
-    margin: 25px 0;
+    margin: 40px auto;
 }
 /* style */
 .row{
@@ -38,6 +41,9 @@ img{
 .flex{
     display: flex;
 }
+.column{
+    flex-direction: column;
+}
 .justify-center{
     justify-content: center;
 }
@@ -47,7 +53,14 @@ img{
 .align-items-center{
     align-items: center;
 }
+.text-align-center{
+    text-align: center;
+}
 .title{
+    font-size: 40px;
+    font-weight: bold;
+}
+.names{
     font-size: 20px;
     font-weight: bold;
 }
@@ -91,21 +104,59 @@ img{
     font-size: 75px;
 }
 .application-section li{
-    line-height: 30px;
     padding: 10px;
 }
-.app-development-section{
-    width: 100%;
-    background-color: #9792E4;
+.dev-and-plan-section{
+    width: 100%;;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 45px;
 }
-.app-development-section .s-container{
+.dev-and-plan-section .s-container .col-50{
     padding: 25px;
 }
+.dev-and-plan-section .s-container .col-50.white li.names{
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+.card li{
+    padding: 10px 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
 
-
+    border-radius: 15px;
+    padding: 25px;
+}
+.dev-and-plan-section .card{
+    width: 350px;
+    align-items: center;
+    text-align: center;
+}
+.dev-and-plan-section .card img{
+    width: 200px;
+}
+.dev-and-plan-section .col-50{
+    align-self: flex-end;
+}
+.testimonials-section li{
+    padding: 10px 0;
+}
+.testimonial-card img{
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 999px;
+    margin: 25px; 
+    object-fit: cover;
+}
+.testimonial-card {
+    margin: 25px;
+}
+.working-with-us-section{
+    width: 100%;;
+}
 
 
 
@@ -137,7 +188,13 @@ img{
 .bg-white{
     background-color: white;
 }
+.bg-violet{
+    background-color: #9792E4
+}
 /* font color */
+.violet{
+    color: #9792E4
+}
 .lightblue{
     color: #0084FD;
 }
@@ -154,4 +211,10 @@ img{
     width: 120px;
     display: flex;
     justify-content: center;
+}
+.button-app{
+    line-height: 35px;
+    border-radius: 50px;
+    width: 35px;
+    margin-top: 15px;
 }
