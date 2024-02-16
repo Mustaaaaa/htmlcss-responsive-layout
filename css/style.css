@@ -22,6 +22,9 @@ li{
     line-height: 30px;
 }
 /* layout */
+.hamburger{
+    display: none;
+}
 .b-container{
     max-width: 1200px;
     padding: 0 20px;
@@ -52,6 +55,9 @@ li{
 .column{
     flex-direction: column;
 }
+.nav-bar{
+    width: 100%;
+}
 .justify-center{
     justify-content: center;
 }
@@ -75,33 +81,23 @@ li{
 .main-header{
     height: 75px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .main-body{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-.application-section img{
-    width: 200px;
-    max-width: 100%;
-}
-.application-section .col-33{
+.application-section .col-4{
     text-align: center;
     padding: 20px;
 }
-
-.application-section .col-66 .col-50.phone-image{
-    align-self: flex-end;
-}
-.application-section .col-66, .col-50.left-column{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-}
-.application-section .col-66 .col-50.left-column{
+.application-section .demo-app {
     padding: 20px;
+}
+.application-section .col-6.phone-image.col-md-12{
+    align-self: flex-end;
+    line-height: 0;
+    width: 250px;
 }
 .application-section .icon{
     font-size: 75px;
@@ -113,13 +109,12 @@ li{
     width: 100%;;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     padding-top: 45px;
 }
-.dev-and-plan-section .s-container .col-50{
+.dev-and-plan-section .s-container .col-6 {
     padding: 25px;
 }
-.dev-and-plan-section .s-container .col-50.white li.names{
+.dev-and-plan-section .s-container .col-6 .white li.names{
     padding-top: 55px;
     padding-bottom: 30px;
 }
@@ -129,11 +124,10 @@ li{
 .card{
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
+    align-items: center;
     padding: 25px;
 }
 .dev-and-plan-section .card{
-    align-items: center;
     text-align: center;
     max-width: 100%;
 }
@@ -141,7 +135,7 @@ li{
     max-width: 100%;
     width: 200px;
 }
-.dev-and-plan-section .col-50{
+.dev-and-plan-section .col-6 {
     align-self: flex-end;
 }
 .testimonials-section li{
@@ -154,21 +148,14 @@ li{
     margin: 25px; 
     object-fit: cover;
 }
-.testimonial-card {
-    margin: 25px;
-    width: 100%;
-}
-.working-with-us-section{
-    width: 100%;;
-}
-.about-us-section .col-66, .about-us-section .col-33{
+.about-us-section .col-8, .about-us-section .col-4{
     padding: 25px;
 }
 .about-us-section li{
     padding: 20px;
     padding-left: 0;
 }
-.about-us-section .col-33 .names.violet{
+.about-us-section .col-4 .names.violet{
     font-size: 25px;
 }
 .about-us-image{
@@ -184,9 +171,6 @@ li{
     font-size: 75px;
     font-weight: bold;
 }
-.get-started-section{
-    width: 100%;
-}
 .get-started-section li{
     padding: 15px 0;
     line-height: normal;
@@ -194,30 +178,22 @@ li{
 .footer-section a, .get-started-section a{
     text-decoration: underline;
 }
-.footer-section{
-    width: 100%;
-}
 .footer-section li{
     padding: 15px 0;
 }
-
+.round-border{
+    border-radius: 15px;
+}
 
 /* column */
-.col-33{
+.col-4{
     width: calc(4 *100% / 12 - 25px);
-    border-radius: 15px;
 }
-.col-50{
+.col-6{
     width: calc(6 *100% / 12 - 25px);
-    border-radius: 15px;
 }
-.col-66{
+.col-8{
     width: calc(8* 100% / 12 - 25px);
-    border-radius: 15px;
-}
-.col-100{
-    width: calc(100%);
-    border-radius: 15px;
 }
 /* background color */
 .bg-lightblue{
@@ -265,22 +241,22 @@ li{
     gap: 5px;
 }
 .button-app{
-    line-height: 35px;
+    line-height: 45px;
     border-radius: 50px;
-    width: 35px;
+    width: 45px;
     margin-top: 15px;
+    
 }
 .get-started-section .button{
     line-height: 60px;
     width: 200px;
-}
-
-.hamburger{
-    display: none;
+    text-decoration: none;
 }
 
 
-@media (max-width: 1199px) {
+
+
+@media (max-width: 991px) {
     .menu{
         display: none;
     }
@@ -294,12 +270,12 @@ li{
 		width: calc(12 * 100% / 12 - 25px);
 	}
 }
-@media (max-width: 809px) {
+@media (max-width: 767px) {
     .col-sm-12 {
 		width: calc(12 * 100% / 12 - 25px);
 	}
-    .row{
-        display: flex;
-        flex-direction: column;
+    .testimonial-card.flex{
+        display: initial;
+        text-align: center;
     }
 }
