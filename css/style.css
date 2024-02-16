@@ -126,7 +126,6 @@ li{
 .card{
     display: flex;
     flex-direction: column;
-
     border-radius: 15px;
     padding: 25px;
 }
@@ -157,7 +156,25 @@ li{
 .working-with-us-section{
     width: 100%;;
 }
-
+.about-us-section .col-66, .about-us-section .col-33{
+    padding: 25px;
+}
+.about-us-section li{
+    padding: 20px;
+    padding-left: 0;
+}
+.about-us-section .col-33 .names.violet{
+    font-size: 25px;
+}
+.about-us-image{
+    background-image: url(../img/about.jpg);
+    background-size: cover;
+    border-radius: 999px;
+    width: 250px;
+    aspect-ratio: 1/1;
+    font-size: 90px;
+    text-align: end;
+}
 
 
 
@@ -211,6 +228,11 @@ li{
     width: 120px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.about-us-section .button{
+    width: 200px;
+    gap: 5px;
 }
 .button-app{
     line-height: 35px;
